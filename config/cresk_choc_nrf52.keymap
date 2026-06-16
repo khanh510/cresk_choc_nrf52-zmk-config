@@ -32,10 +32,20 @@
     };
     combos {
         compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp ESC>;
+        };
         combo_del {
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
+        };
+        combo_bs {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp BKSP>;
         };
         combo_insert {
             timeout-ms = <50>;
